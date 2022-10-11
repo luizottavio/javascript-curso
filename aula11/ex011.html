@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>verificador de nacionalidade</title>
+    <style>
+        body {
+            font: normal 1.1em Arial;
+            background-color: rgba(0, 70, 128, 0.637);
+            color: black;
+            text-align: center;
+        }
+        input {
+            width: 200px;
+            height: 30px;
+        }
+        #button {
+            width: 100px;
+            height: 30px;
+        }
+        div {
+            padding-top: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Sistema de verificador de nacionalidade</h1>
+    <input type="text" id="pais" placeholder="Pais">
+    <input type="button" value="verificar" onclick="verificar()" id="button">
+    <div id="resposta">
+
+    </div>
+
+    <script>
+        function verificar() {
+            var qpais = document.getElementById('pais').value
+            var res = document.getElementById('resposta');
+            res.innerHTML = `<p>Vivendo em <strong>${qpais}</strong> <br></p>`
+            if(qpais != 'Brasil') {
+                res.innerHTML += `<p>Você é estrangeiro<br></p>`
+            } else {
+                res.innerHTML += `Você é Brasileiro`
+            }
+        }
+        
+    </script>
+</body>
+</html>
