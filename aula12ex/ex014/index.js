@@ -4,7 +4,6 @@ function carregar() {
     var data = new Date();
     var horas = data.getHours();
     var min = data.getMinutes();
-    var horas = 14
     msg.innerHTML = `Agora são ${horas}:${min} horas`
 
     if (horas >= 00 && horas < 12) {
