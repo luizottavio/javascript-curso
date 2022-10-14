@@ -1,5 +1,3 @@
-
-
 //  Repetição com For
 console.log('Vai começar...');
 for (var c = 1; c <= 94; c++) {
