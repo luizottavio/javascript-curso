@@ -11,18 +11,22 @@
 </head>
 <body>
     <header>
-        <h1>Título</h1>
+        <h1>Qual Tabuada você quer saber?</h1>
     </header>
     <section>
         <div>
-
+            <p>Números: <input type="number" name="txt1" id="txt1"></p>
+            <input type="button" value="tabuada" onclick="tabuada()">
         </div>
-        <div>
 
+        <div id="res">
+            <select name="tabuada" id="tab" size="20">
+                <option>Digite um número acima</option>
+            </select> 
         </div>
     </section>
     <footer>
-        <p>&copy; By Luiz Otávio</p>
+        <p>&copy; By <a href="https://github.com/luizottavio" target="_blank">Luiz Otávio</a></p>
     </footer>
 
     <script src="index.js"></script>
