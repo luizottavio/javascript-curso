@@ -28,6 +28,11 @@ input {
     margin-bottom: 20px;
     padding: 6px;
 }
+
+select {
+    width: 150px;
+}
+
 footer {
     color: black;
     font-style: italic;
